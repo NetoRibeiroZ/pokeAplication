@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainPokeComponent } from './componentes/main-poke/main-poke.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainPokeComponent
   ],
   imports: [
     BrowserModule,
