@@ -1,11 +1,11 @@
 <div>
-  <div>
-    <img src="" alt="">
-    <p>{{poke.id}}</p>
-    <p>{{poke.name}}</p>
-    <p>{{poke.link}}</p>
+  <div class="row">
+    <div *ngFor="let poke of pokin" class="card green">
+      <img class="image" src="" alt="Poke photo" />
+      <h2>{{poke.name}}</h2>
+      <p><b>ID:</b>{{poke.id}}</p>
+      <p><b>LINK:</b>{{poke.link}}</p>
+    </div>
   </div>
-
-
-
+  <input class="alter" type="text" [(ngModel)]="poke.name">
 </div>
